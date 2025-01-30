@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Recovery Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+   <br>. <br>
+    <h1>Clay account recovery</h1>
+    <h1>Clay Account recovery</h1>
+        <h1>Account Recovery Services</h1>
+        <p>Fill out the form below to request account recovery assistance.</p>
+        <form id="accountRecoveryForm" action="account-recovery.php" method="POST">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="whatsapp">WhatsApp Number</label>
+                <input type="text" id="whatsapp" name="whatsapp" required pattern="\d{10}">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+
+            <!-- Account Details -->
+            <div class="form-group">
+                <label for="account">Select Account</label>
+                <select id="account" name="account" required>
+                    <option value="Email">Email</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="Discord">Discord</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="account-holder-name">Account Holder Name</label>
+                <input type="text" id="account-holder-name" name="account_holder_name" required>
+            </div>
+            <div class="form-group">
+                <label for="connected-email">Enter Connected Email to Account</label>
+                <input type="email" id="connected-email" name="connected_email">
+            </div>
+            <div class="form-group">
+                <label for="connected-number">Enter Connected Number to Account</label>
+                <input type="text" id="connected-number" name="connected_number" pattern="\d{10}">
+            </div>
+            <div class="form-group">
+                <label for="device">Enter Logged Device Name and Model</label>
+                <input type="text" id="device" name="device">
+            </div>
+            <div class="form-group">
+                <label for="account-type">Select Account Type</label>
+                <select id="account-type" name="account_type" required>
+                    <option value="Lost">Lost</option>
+                    <option value="Hacked">Hacked</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1e293b, #4a5568);
+    color: white;
+    text-align: center;
+}
+
+.form-container {
+    background: white;
+    color: #2d3748;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+</style>
+
+<script>
+document.getElementById('accountRecoveryForm').addEventListener('submit', function (e) {
+    const firstname = document.getElementById('firstname').value.trim();
+    const lastname = document.getElementById('lastname').value.trim();
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!firstname || !lastname || !whatsapp || !email) {
+        alert('Please fill in all required fields.');
+        e.preventDefault();
+    }
+});
+
+</script>
+
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Cybercrime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Report Cybercrime</h1>
+        <p>Help us combat cybercrime by submitting detailed information below.</p>
+        <form id="cybercrimeForm" action="report.php" method="POST">
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="text" id="number" name="number" required pattern="\d{10}">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Report Type -->
+            <div class="form-group">
+                <label for="report-type">Type of Cybercrime</label>
+                <select id="report-type" name="report_type" required>
+                    <option value="Child Abuse">Child Abuse</option>
+                    <option value="Account Hacked">Account Hacked</option>
+                    <option value="Cyber Bullying">Cyber Bullying</option>
+                    <option value="Pornography">Pornography</option>
+                    <option value="Fake Account">Fake Account</option>
+                    <option value="Fake Website">Fake Website</option>
+                    <option value="Financial Fraud">Financial Fraud</option>
+                    <option value="Identity Theft">Identity Theft</option>
+                    <option value="Phishing">Phishing</option>
+                </select>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="criminal-info">Information about Cybercriminal</label>
+                <textarea id="criminal-info" name="criminal_info" rows="4" placeholder="Provide any known details about the criminal..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="address">Your Address</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" min="1" max="120">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Report</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e293b, #4a5568);
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+
+<script>
+
+// Optional: Add client-side validation or dynamic functionalities
+document.getElementById('cybercrimeForm').addEventListener('submit', function (e) {
+    const firstname = document.getElementById('firstname').value.trim();
+    const lastname = document.getElementById('lastname').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!firstname || !lastname || !email) {
+        alert('Please fill in all required fields.');
+        e.preventDefault();
+    }
+});
+</script>
+
+

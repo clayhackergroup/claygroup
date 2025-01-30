@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Cybercrime</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Report a Cybercrime</h1>
+        <p>Protect yourself and others by reporting cybercrime. Stay safe online!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="info-section">
+            <h2>Understanding Cybercrime</h2>
+            <p>
+                Cybercrime refers to illegal activities carried out using digital devices or the internet. Examples include hacking, phishing, identity theft, and cyberbullying. It's important to report such crimes promptly to protect yourself and others.
+            </p>
+            <img src="https://via.placeholder.com/600x300" alt="Cybercrime illustration" class="info-image">
+        </section>
+
+        <section class="rules-section">
+            <h2>Reporting Rules</h2>
+            <ul>
+                <li>Ensure you have all the evidence (e.g., emails, screenshots).</li>
+                <li>Do not confront the perpetrator directly.</li>
+                <li>Provide accurate information when filing the report.</li>
+                <li>Use secure channels to report sensitive data.</li>
+            </ul>
+        </section>
+
+        <section class="legal-section">
+            <h2>Legal Aspects</h2>
+            <p>
+                Cybercrime is punishable under the Information Technology Act, 2000, and other legal frameworks in India. Reporting such crimes helps law enforcement agencies take appropriate actions and prevents future incidents.
+            </p>
+        </section>
+
+        <section class="action-section">
+            <h2>Make a Report</h2>
+           <a href="case.html"> <button  class="report-btn" id="report-btn">Report Now</button></a>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Email: claycybersecurityteam24@gmail.com</p>
+        <p>Phone: +91 9699957917</p>
+        <p>Follow us on: 
+            <a href="https://instagram.com/h4cker.in" target="_blank">Instagram</a>, 
+            <a href="https://facebook.com" target="_blank">Facebook</a>, 
+            <a href="https://t.me/claygroup24" target="_blank">Telegram</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<style>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1e293b, #4a5568);
+    color: #f1f1f1;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: #1a202c;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #a0aec0;
+}
+
+/* Info Section */
+.info-section {
+    padding: 30px 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #2d3748;
+}
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+}
+
+.info-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Rules Section */
+.rules-section, .legal-section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #2d3748;
+}
+
+.rules-section h2, .legal-section h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+}
+
+.rules-section ul {
+    text-align: left;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #4a5568;
+}
+
+/* Action Section */
+.action-section {
+    padding: 30px;
+    margin: 20px auto;
+    background: #2d3748;
+    border-radius: 10px;
+    color: white;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.action-section h2 {
+    font-size: 1.8rem;
+    color: #63b3ed;
+}
+
+.report-btn {
+    background: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.report-btn:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #1a202c;
+    color: white;
+    padding: 20px;
+}
+
+footer a {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #81e6d9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const reportButton = document.getElementById('report-btn');
+
+    reportButton.addEventListener('click', () => {
+        alert('Redirecting to the report form...');
+        window.location.href = 'report-form.html'; // Link to the report form
+    });
+});
+</script>

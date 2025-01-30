@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> clay Account Recovery Services</title>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>clay Account Recovery Services</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="info-section">
+            <h2>Why Choose Our Services?</h2>
+            <p>
+                At Clay Security Services, we specialize in recovering your social media accounts safely and securely. Whether you've forgotten your credentials or been a victim of hacking, we’re here to help you regain control.
+            </p>
+        </section>
+
+        <section class="pricing-section">
+            <h2>Our Pricing</h2>
+            <div class="pricing-cards">
+                <!-- Basic Account Recovery -->
+                <div class="card">
+                    <h3>Basic Account Recovery</h3>
+                    <p>Recover your account if you've forgotten your password or email.</p>
+                    <h4>Price: ₹700</h4>
+                </div>
+                <!-- Hacked Account Recovery -->
+                <div class="card">
+                    <h3>Hacked Account Recovery</h3>
+                    <p>Retrieve accounts compromised due to hacking or phishing.</p>
+                    <h4>Price: ₹1200</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="start-section">
+            <h2>Start Your Recovery Now</h2>
+           <a href="recover.html"> <button class="start-btn" id="start-btn">Start</button></a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Email: claysecurity@example.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Follow us on: 
+            <a href="https://twitter.com" target="_blank">Twitter</a>, 
+            <a href="https://facebook.com" target="_blank">Facebook</a>, 
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </p>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+</html>
+
+
+
+<style>
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1f2937, #3b4252);
+    color: #f1f1f1;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background: #4c51bf;
+    padding: 20px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+/* Info Section */
+.info-section {
+    padding: 30px 20px;
+    margin: 20px auto;
+    background: #2d3748;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: #63b3ed;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #e2e8f0;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 30px 20px;
+    margin: 20px auto;
+    background: #2d3748;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.pricing-section h2 {
+    font-size: 1.8rem;
+    color: #63b3ed;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #4a5568;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    color: #63b3ed;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    color: #81e6d9;
+    margin-top: 10px;
+}
+
+/* Start Section */
+.start-section {
+    margin: 30px auto;
+}
+
+.start-btn {
+    background: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.start-btn:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #1f2937;
+    color: #f1f1f1;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #81e6d9;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+</style>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const startButton = document.getElementById('start-btn');
+
+    // Add click event to the "Start" button
+    startButton.addEventListener('click', () => {
+        alert('Thank you for choosing Clay Security Services! Our team will contact you shortly.');
+    });
+});
+
+</script>

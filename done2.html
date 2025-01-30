@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Submitted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="success-container">
+        <div class="checkmark">
+            <div class="circle"></div>
+            <div class="check"></div>
+        </div>
+        <h1>Your case has been submitted successfully!</h1>
+        <p>Our admin will contact you soon to proceed with the next steps. Thank you for reaching out.</p>
+        <button onclick="goHome()">Go to Home</button>
+    </div>
+
+    <script>
+        function goHome() {
+            window.location.href = "home.html"; // Redirect to the home page
+        }
+    </script>
+</body>
+</html>
+
+<style>
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #4caf50, #81c784);
+    color: white;
+    text-align: center;
+}
+
+/* Success Container */
+.success-container {
+    background: #fff;
+    color: #2d3748;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Success Message */
+.success-container h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    animation: slideIn 1s ease-in-out;
+}
+
+.success-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* Checkmark Animation */
+.checkmark {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background: #4caf50;
+    border-radius: 50%;
+    animation: grow 1s ease-in-out;
+}
+
+.circle {
+    width: 100%;
+    height: 100%;
+    background: #81c784;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: pulse 2s infinite;
+}
+
+.check {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    width: 50%;
+    height: 50%;
+    border: solid white;
+    border-width: 0 10px 10px 0;
+    transform: rotate(45deg);
+    animation: checkAppear 1s ease-in-out 0.5s forwards;
+    opacity: 0;
+}
+
+/* Animations */
+@keyframes grow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+}
+
+@keyframes checkAppear {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+</style>
+
+

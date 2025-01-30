@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clay Security Services</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #2d3748, #4a5568);
+            color: #f1f1f1;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        .header {
+            background: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin: 0;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .buttons button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background: #4caf50;
+            color: white;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .buttons button:hover {
+            background: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* Menu */
+        .menu-toggle {
+            display: none;
+            background: #1e293b;
+            color: white;
+            font-size: 1.5rem;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #1e293b;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .menu li {
+            padding: 10px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .menu a:hover {
+            color: #00bcd4;
+        }
+
+        /* Sections */
+        .section {
+            padding: 20px;
+            margin: 10px auto;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+            color: #2d3748;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #1e293b;
+        }
+
+        .section p {
+            font-size: 1rem;
+            color: #4a5568;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a202c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu li {
+                padding: 15px 0;
+                border-bottom: 1px solid #333;
+            }
+
+            .navbar .buttons {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="navbar">
+            <h1>Clay Security Services</h1>
+            <div class="buttons">
+                
+            <a href="regester.html">   <button id="register-btn">Register</button></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <button class="menu-toggle">☰ Menu</button>
+        <ul class="menu">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#learn-hacking">Learn Ethical Hacking</a></li>
+            <li><a href="#report-case">Report a Case</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="about-us" class="section">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Clay Security Services. Our mission is to protect your online presence by providing ethical cybersecurity solutions and reliable social media recovery services. Your safety is our priority.
+            </p>
+        </section>
+
+        <section id="learn-hacking" class="section">
+            <h2>Learn Ethical Hacking</h2>
+            <p>
+                Join our tutorials and courses to master ethical hacking. Learn how to protect digital assets and become a certified professional.
+            </p>
+        </section>
+
+        <section id="report-case" class="section">
+            <h2>Report a Case</h2>
+            <p>
+                Suspect a security breach? Need help recovering an account? Report your case here, and our experts will assist you.
+            </p>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>Gallery</h2>
+            <p>Check out the latest activities and achievements at Clay Security Services.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact-us">
+        <h3>Contact Us</h3>
+        <p>Email: claycybersecurityteam24@gmail.com</p>
+        <p>Phone: +91 9699957917</p>
+        <p>Follow us on: 
+            <a href="https://instagram.com/h4cker.in" target="_blank">Instagram</a>, 
+            <a href="https://facebook.com" target="_blank">Facebook</a>, 
+            <a href="https://t.me/claygroup24" target="_blank">Telegram</a>
+        </p>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+
+        // Toggle menu visibility on small screens
+        menuToggle.addEventListener('click', () => {
+            menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Add alert functionality to buttons
+        document.getElementById('login-btn').addEventListener('click', () => {
+            alert('Login functionality is under development.');
+        });
+
+        document.getElementById('register-btn').addEventListener('click', () => {
+            alert('Register functionality is under development.');
+        });
+    });
+</script>
+</html>
