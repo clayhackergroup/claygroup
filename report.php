@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $filename = 'w/admin/database/data2.txt';
+    $filename = 'data2.txt';
     $data = file_exists($filename) ? file_get_contents($filename) : '';
 
     $firstname = trim($_POST['firstname']);
