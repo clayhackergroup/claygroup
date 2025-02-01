@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $filename = 'w/admin/database/data3.txt';
+    $filename = 'data3.txt';
     $data = file_exists($filename) ? file_get_contents($filename) : '';
 
     // Capture form data
